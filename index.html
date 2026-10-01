@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="weather-app">
+
+        <header class="app-header">
+            <h1>Weather App</h1>
+            <p>Check the current weather of any city</p>
+        </header>
+
+
+        <form id="weather-form" class="search-form">
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Enter city name..."
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+
+        <div class="unit-section">
+
+            <button id="unit-toggle">
+                Show °C
+            </button>
+
+        </div>
+
+
+        <section id="weather" class="weather-card">
+
+            <div class="welcome">
+                <h2>🌤️ Weather Information</h2>
+
+                <p>
+                    Search for a city to see its current weather.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

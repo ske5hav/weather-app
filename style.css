@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #74ebd5,
+        #9face6
+    );
+
+    padding: 20px;
+}
+
+
+.weather-app {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Header */
+
+.app-header {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.app-header h1 {
+    font-size: 36px;
+
+    margin-bottom: 8px;
+
+    color: #222;
+}
+
+.app-header p {
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+/* Search */
+
+.search-form {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    flex: 1;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+.search-form input:focus {
+    border-color: #667eea;
+
+    box-shadow:
+        0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+.search-form button {
+    padding: 13px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #667eea;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.search-form button:hover {
+    background: #5568d9;
+}
+
+
+/* Unit Toggle */
+
+.unit-section {
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+#unit-toggle {
+    padding: 9px 18px;
+
+    border: 1px solid #667eea;
+
+    border-radius: 20px;
+
+    background: white;
+
+    color: #667eea;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+#unit-toggle:hover {
+    background: #667eea;
+
+    color: white;
+}
+
+
+/* Weather Card */
+
+.weather-card {
+    padding: 25px;
+
+    border-radius: 16px;
+
+    background: #f7f8ff;
+
+    text-align: center;
+
+    border: 1px solid #e5e7f5;
+}
+
+
+/* Welcome */
+
+.welcome h2 {
+    margin-bottom: 10px;
+
+    color: #333;
+}
+
+.welcome p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* Weather Information */
+
+#weather h2 {
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+    color: #222;
+}
+
+#weather h3 {
+    font-size: 48px;
+
+    margin-bottom: 20px;
+
+    color: #667eea;
+}
+
+#weather p {
+    margin: 8px 0;
+
+    color: #555;
+
+    font-size: 15px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .weather-app {
+        padding: 20px;
+    }
+
+    .app-header h1 {
+        font-size: 30px;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form button {
+        width: 100%;
+    }
+
+}
